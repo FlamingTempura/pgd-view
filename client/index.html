@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Patient-Generated Data Display</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="loading">
+	Loading...
+</div>
+<div class="people">
+	<h1>PGD2</h1>
+	<h2>A tool for analysing and auding patient-generated data (PGD) from consumer health technology</h2>
+	<p>Select a patient:</p>
+	<div class="list">
+		<div class="links"></div>
+		<button class="generateperson"><i class="material-icons">person_add</i></button>
+	</div>
+	<div class="version"></div>
+</div>
+<div class="dashboard">
+	<div class="fixed">
+		<div class="profile">
+			<i class="selectpatient material-icons">face</i>
+			<h1><span class="firstName"></span> <span class="lastName"></span></h1>
+			<dl>
+				<dt>Sex:</dt><dd class="sex"></dd>
+				<dt>Birthdate:</dt><dd class="birthdate"></dd>
+				<dt>Age:</dt><dd class="age"></dd>
+				<dt>Blood type:</dt><dd class="bloodType"></dd>
+				<dt>Height:</dt><dd class="normalHeight"></dd>
+				<dt>Normal weight:</dt><dd class="normalWeight"></dd>
+			</dl>
+			<button class="debug"><i class="material-icons">build</i></button>
+		</div>
+
+		<div class="toolbar">
+			<div class="left">
+				<button class="selectcharts">Charts</button>
+				<div class="charts"></div>
+				
+				<button class="import">Import</button>
+				<button class="selectexport">Export</button>
+				<button class="print">Print</button>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zoom:
+				<span class="zooms"></span>
+			</div>
+			<div class="right">
+				<button class="startaudit">Audit</button>
+				<button class="startinvestigation">Investigation</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="timeline"></div>
+	<div class="tip"></div>
+	<template class="template-audit">
+		<div class="dialog audit">
+			<div class="titlebar">
+				<span class="title"></span>
+				<div class="close">&times;</div>
+			</div>
+			<div class="content">
+				<a class="img" target="_blank"><img></a>
+				<h2 style="margin-top: 0">About the data source</h2>
+				<dl>
+					<dt>Name</dt><dd class="source-name"></dd>
+					<dt>Measures</dt><dd class="source-measures"></dd>
+					<dt>Precision</dt><dd class="source-precision"></dd>
+					<dt style="display: block">Description</dt><dd class="source-description"></dd>
+				</dl>
+				<h2>About the measurement</h2>
+				<dl>
+					<dt>Date/time</dt><dd class="date"></dd>
+					<dt>Type</dt><dd class="type"></dd>
+					<dt>Value</dt><dd class="value"></dd>
+					<dt>Unit</dt><dd class="unit"></dd>
+					<dt style="display: block">Description</dt><dd class="description"></dd>
+				</dl>
+				<h2>Measurement in context</h2>
+				<p>The chart below shows events which occurred between 7 days before and 1 day after this measurement.</p>
+				<div class="incontext"></div>
+				<h2 class="reviewstitle"></h2>
+				<div class="reviews"></div>
+			</div>
+		</div>
+	</template>
+	<template class="template-datumselect">
+		<div class="dialog datumselect">
+			<div class="titlebar">
+				Select datapoint
+				<div class="close">&times;</div>
+			</div>
+			<div class="content">
+				Click on a datapoint to select it.
+				<div class="datum"></div>
+			</div>
+		</div>
+	</template>
+	<template class="template-investigation">
+		<div class="dialog investigation">
+			<div class="titlebar">
+				<span class="title"></span>
+				<div class="close">&times;</div>
+			</div>
+			<div class="content">
+				<p style="padding: 0 12px;">The investigation subject is on the right. The sankey chart shows potential causal events leading into the investigation subject.
+				</p>
+				<svg class="sankey"></svg>
+			</div>
+		</div>
+	</template>
+	<template class="template-dataselect">
+		<div class="dialog dataselect" style="width: 390px; height: 420px;">
+			<div class="titlebar">
+				Select data for <span class="mode"></span>
+				<div class="close">&times;</div>
+			</div>
+			<div class="content" style="text-align: center">
+				<p>Add datapoints or queries to the selection below and then click <emph>Start <span class="mode"></span></emph>.</p>
+				<button class="addquery">Add Query</button>
+				<button class="adddatapoint">Add Datapoint</button>
+				<ul class="list">
+				</ul>
+				<button class="start">Start <span class="mode"></span></button>
+			</div>
+		</div>
+	</template>
+	<template class="template-dataexport">
+		<div class="dialog dataexport" style="width: 600px; height: 400px;">
+			<div class="titlebar">
+				Data Export: <span class="title"></span>
+				<div class="close">&times;</div>
+			</div>
+			<div class="content" style="text-align: center">
+				<p><button class="download">Download</button></p>
+				<table>
+					<thead></thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+	</template>
+	<template class="template-menu">
+		<div class="menu">
+		</div>
+	</template>
+	<script src="/bundle.js"></script>
+</div>
+</body>
+</html>

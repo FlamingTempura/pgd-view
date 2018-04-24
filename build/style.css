@@ -1,0 +1,640 @@
+/* hind-siliguri-300normal - latin */
+@font-face {
+  font-family: 'Hind Siliguri';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src:
+    local('Hind Siliguri Light '),
+    local('Hind Siliguri-Light'),
+    url('./files/hind-siliguri-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+    url('./files/hind-siliguri-latin-300.woff') format('woff'); /* Modern Browsers */
+}
+
+/* hind-siliguri-400normal - latin */
+@font-face {
+  font-family: 'Hind Siliguri';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    local('Hind Siliguri Regular '),
+    local('Hind Siliguri-Regular'),
+    url('./files/hind-siliguri-latin-400.woff2') format('woff2'), /* Super Modern Browsers */
+    url('./files/hind-siliguri-latin-400.woff') format('woff'); /* Modern Browsers */
+}
+
+/* hind-siliguri-500normal - latin */
+@font-face {
+  font-family: 'Hind Siliguri';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:
+    local('Hind Siliguri Medium '),
+    local('Hind Siliguri-Medium'),
+    url('./files/hind-siliguri-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+    url('./files/hind-siliguri-latin-500.woff') format('woff'); /* Modern Browsers */
+}
+
+/* hind-siliguri-600normal - latin */
+@font-face {
+  font-family: 'Hind Siliguri';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src:
+    local('Hind Siliguri SemiBold '),
+    local('Hind Siliguri-SemiBold'),
+    url('./files/hind-siliguri-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+    url('./files/hind-siliguri-latin-600.woff') format('woff'); /* Modern Browsers */
+}
+
+/* hind-siliguri-700normal - latin */
+@font-face {
+  font-family: 'Hind Siliguri';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local('Hind Siliguri Bold '),
+    local('Hind Siliguri-Bold'),
+    url('./files/hind-siliguri-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('./files/hind-siliguri-latin-700.woff') format('woff'); /* Modern Browsers */
+}
+
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(MaterialIcons-Regular.woff2) format('woff2'),
+       url(MaterialIcons-Regular.woff) format('woff'),
+       url(MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 136px 0 0;
+  background: #FFFFFF;
+  color: #333333;
+  user-select: none;
+}
+svg text {
+  fill: #333333;
+  font-size: 14px;
+}
+body,
+svg text {
+  font-family: 'Hind Siliguri', sans-serif;
+  line-height: 1.48em;
+  font-size: 14px;
+  font-weight: 400;
+}
+a,
+.link {
+  color: #66CC99;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  transition: background-color ease-in-out 0.03s;
+}
+a:hover,
+.link:hover {
+  background-color: #EEEEEE;
+}
+button {
+  border: 1px solid #DADFE1;
+  border-bottom-width: 2px;
+  padding: 6px 13px;
+  background: #F9F9F9;
+  cursor: pointer;
+  margin-right: 4px;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+}
+button:hover {
+  background: #DADFE1;
+}
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
+h1 {
+  margin: 24px 0 40px;
+  font-weight: 300;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 22px;
+  margin-bottom: 8px;
+}
+h3 {
+  font-size: inherit;
+  margin: 0 0 4px 0;
+}
+strong,
+th {
+  font-weight: 600;
+}
+table {
+  border-spacing: 0px;
+  border-collapse: separate;
+}
+table td,
+table th {
+  text-align: left;
+  vertical-align: top;
+  padding: 4px 8px 4px 0;
+  border-bottom: 1px solid #EEEEEE;
+}
+.people {
+  margin: -60px auto 0;
+  max-width: 700px;
+  text-align: center;
+  font-size: 16px;
+  border-top: 6px solid #66CC99;
+  border-bottom: 6px solid #66CC99;
+  padding: 34px 12px 66px;
+  background: #FFFFFF;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+.people h2 {
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+.people .list {
+  width: 240px;
+  display: inline-block;
+  border: 1px solid #66CC99;
+  border-radius: 4px;
+}
+.people .list .links {
+  max-height: 200px;
+  overflow: auto;
+  padding: 10px 0;
+}
+.people .list .links div {
+  display: block;
+  padding: 6px;
+}
+.people .list button {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #66CC99;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  padding: 10px 0 6px 0;
+  margin: 0;
+  color: #66CC99;
+}
+.people .list button i {
+  font-size: 18px;
+}
+.people .list button:hover {
+  background: #66CC99;
+  color: white;
+}
+.people .version {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+.dashboard {
+  display: none;
+  background: white;
+}
+.loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  text-align: center;
+  padding-top: 160px;
+  font-size: 30px;
+}
+.dialog {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  padding: 12px;
+  top: 20px;
+  left: 20px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+  transition: box-shadow ease-in-out 0.04s;
+  border-radius: 3px;
+  z-index: 1000;
+}
+.dialog .titlebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 36px;
+  line-height: 36px;
+  text-indent: 12px;
+  border-radius: 3px 3px 0 0;
+  font-size: 14px;
+  margin: 0;
+  background-color: #DADFE1;
+  color: white;
+  font-weight: bold;
+  transition: background-color ease-in-out 0.04s;
+}
+.dialog .titlebar .close {
+  position: absolute;
+  right: 0;
+  height: 36px;
+  width: 38px;
+  text-indent: 2px;
+  top: 0;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 23px;
+  font-weight: 400;
+}
+.dialog .titlebar .close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.dialog .content {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 12px;
+  overflow: auto;
+}
+.dialog.focus {
+  box-shadow: 0px 1px 6px #000000;
+}
+.dialog.focus .titlebar {
+  background-color: #4183D7;
+}
+.audit img {
+  width: 200px;
+  float: right;
+}
+.audit .reviews a {
+  margin: 0 0 10px 0;
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  color: inherit;
+}
+.audit dt {
+  width: 80px;
+}
+.audit dd {
+  display: inline;
+  margin: 0;
+}
+.audit dd:after {
+  display: block;
+  content: '';
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 136px;
+  background: #FFFFFF;
+  z-index: 200;
+}
+.profile,
+.toolbar {
+  background: #FFFFFF;
+  padding: 12px;
+}
+.profile {
+  padding-left: 80px;
+  border-bottom: 1px solid #DADFE1;
+}
+.profile .selectpatient {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 61px;
+  color: #66CC99;
+}
+.profile h1 {
+  font-size: 24px;
+  line-height: 1em;
+  margin: 6px 0 5px;
+}
+.profile .debug {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #ccc;
+}
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  padding-top: 14px;
+}
+.toolbar .left,
+.toolbar .right {
+  flex: 1 1 auto;
+}
+.toolbar .right {
+  text-align: right;
+}
+@media print {
+  .toolbar {
+    display: none;
+  }
+}
+.charts {
+  position: absolute;
+  display: none;
+  background: #F9F9F9;
+  border: 1px solid #DADFE1;
+  padding: 12px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+  column-count: 2;
+  column-gap: 20px;
+  z-index: 500;
+}
+.charts label {
+  display: block;
+}
+@media print {
+  .charts {
+    display: none;
+  }
+}
+dl {
+  margin: 0;
+}
+dl dt {
+  font-weight: bold;
+  display: inline-block;
+}
+dl dd {
+  display: inline-block;
+  margin: 0 12px 0 4px;
+}
+.investigation {
+  width: 720px;
+  height: 530px;
+}
+.investigation .content {
+  padding: 0;
+}
+.sankey .nodes g rect {
+  stroke: none;
+  shape-rendering: crispEdges;
+}
+.sankey .nodes g text {
+  font-size: 11px;
+  pointer-events: none;
+  text-shadow: 0 0px 2px white, 0 0px 1px white;
+}
+.sankey .links path {
+  fill: none;
+  opacity: .3;
+}
+.sankey .links path:hover {
+  opacity: .8;
+}
+svg {
+  display: block;
+}
+svg text {
+  font-size: 11px;
+}
+svg .axis {
+  shape-rendering: crispedges;
+}
+svg .axis > text {
+  font-weight: bold;
+}
+svg .axis .tick text {
+  font-size: 11px;
+}
+.context-chart .axis.y text {
+  transform: translateY(-7px);
+}
+.context-chart .node {
+  opacity: 0.75;
+  fill: #4183D7;
+}
+.context-chart .node.active {
+  fill: #F22613;
+}
+.timeline {
+  padding-top: 26px;
+  padding-bottom: 82px;
+}
+.timeline .export {
+  display: none;
+  position: absolute;
+  left: 99px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 16px;
+  padding: 4px;
+  color: #DADFE1;
+}
+.timeline .chart {
+  border-bottom: 2px solid #DADFE1;
+}
+.timeline .chart .series .line,
+.timeline .chart .series .trend {
+  fill: none;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: 1.5;
+}
+.timeline .chart .series .columns rect {
+  shape-rendering: crispedges;
+}
+.timeline .chart .series .hotspots circle {
+  fill: rgba(0, 0, 0, 0);
+}
+.timeline .chart .series .trend {
+  stroke: black;
+}
+.timeline .heatmap {
+  margin-top: -6px;
+}
+.timeline .heatmap rect {
+  stroke: rgba(0, 0, 0, 0.12);
+  shape-rendering: crispedges;
+}
+.timeline svg.axis {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #F9F9F9;
+  border-top: 1px solid #DADFE1;
+  border-bottom: 1px solid #DADFE1;
+}
+.timeline svg.axis .domain {
+  stroke: none;
+}
+.timeline svg.axis.top {
+  top: 136px;
+  padding-top: 6px;
+}
+.timeline svg.axis.bottom {
+  bottom: 60px;
+}
+.timeline svg.rangebar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 100;
+  border-top: 2px solid white;
+}
+.timeline svg.rangebar .range {
+  fill: #4183D7;
+  opacity: 0.2;
+  cursor: -webkit-grab;
+}
+.timeline .dangers rect,
+.timeline rect.danger {
+  fill: #F22613;
+  stroke-width: 2px;
+  shape-rendering: crispedges;
+}
+.menu {
+  position: fixed;
+  width: 150px;
+  background: #F9F9F9;
+  z-index: 100000;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  max-height: 200px;
+  overflow: auto;
+}
+.menu div {
+  padding: 6px;
+}
+.menu div:hover {
+  background: #4183D7;
+  color: #FFFFFF;
+}
+.menu.queries {
+  width: 300px;
+}
+.tip {
+  position: fixed;
+  display: none;
+  padding: 6px 12px;
+  background: black;
+  color: #FFFFFF;
+  z-index: 100000;
+  max-width: 200px;
+}
+.dataselect .list {
+  height: 200px;
+  border: 1px solid #DADFE1;
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  border-radius: 5px;
+  overflow: auto;
+}
+.dataselect .list li {
+  position: relative;
+  padding: 4px 6px;
+  border-bottom: 1px solid #EEEEEE;
+}
+.dataselect .list li .delete {
+  border: none;
+  background: none;
+  box-shadow: none;
+  position: absolute;
+  right: 1px;
+  padding: 0 6px;
+  margin: 0;
+  top: 6px;
+}
+.dataselect .list li .delete i {
+  font-size: 16px;
+}
+.zooms {
+  margin-left: 4px;
+}
+.zooms button {
+  margin-right: 0;
+  border-right: none;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 34px;
+  text-align: center;
+}
+.zooms button:first-child {
+  border-radius: 3px 0 0 3px;
+}
+.zooms button:last-child {
+  border-radius: 0 3px 3px 0;
+  border-right: 1px solid #DADFE1;
+}
+.dialog.datumselect {
+  width: 250px;
+  height: 136px;
+}
+.dialog.datumselect .datum {
+  background: #F9F9F9;
+  border: 1px solid #DADFE1;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-top: 6px;
+  height: 50px;
+  overflow: hidden;
+}
